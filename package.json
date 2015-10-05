@@ -1,0 +1,23 @@
+{
+  "name": "adress_book",
+  "version": "1.0.0",
+  "description": "Implementing adress Book using Redux and React",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jurStv/adressBook-Redux.git"
+  },
+  "keywords": [
+    "redux_example",
+    "adress_book"
+  ],
+  "author": "jurStv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jurStv/adressBook-Redux/issues"
+  },
+  "homepage": "https://github.com/jurStv/adressBook-Redux#readme"
+}
