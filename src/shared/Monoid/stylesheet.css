@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'monoidregular';
+    src: url('./monoid-regular-dollar-0-1-webfont.eot');
+    src: url('./monoid-regular-dollar-0-1-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('./monoid-regular-dollar-0-1-webfont.woff2') format('woff2');
+    src: url('./monoid-regular-dollar-0-1-webfont.woff') format('woff');
+    src: url('./monoid-regular-dollar-0-1-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'monoidbold';
+    src: url('./monoid-bold-dollar-0-1-webfont.eot');
+    src: url('./monoid-bold-dollar-0-1-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('./monoid-bold-dollar-0-1-webfont.woff2') format('woff2');
+    src: url('./monoid-bold-dollar-0-1-webfont.woff') format('woff');
+    src: url('./monoid-bold-dollar-0-1-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'monoidretina';
+    src: url('./monoid-retina-dollar-0-1-webfont.eot');
+    src: url('./monoid-retina-dollar-0-1-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('./monoid-retina-dollar-0-1-webfont.woff2') format('woff2');
+    src: url('./monoid-retina-dollar-0-1-webfont.woff') format('woff');
+    src: url('./monoid-retina-dollar-0-1-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'monoiditalic';
+    src: url('./monoid-italic-dollar-0-1-webfont.eot');
+    src: url('./monoid-italic-dollar-0-1-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('./monoid-italic-dollar-0-1-webfont.woff2') format('woff2');
+    src: url('./monoid-italic-dollar-0-1-webfont.woff') format('woff');
+    src: url('./monoid-italic-dollar-0-1-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
