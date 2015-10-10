@@ -1,5 +1,6 @@
+import { applyMiddleware } from "redux";
 import createStore from "../helpers/createStore";
-import rootReducer from "../reducers";
+import { rootReducer, storageSync} from "../reducers";
 import R from "ramda";
 import { safeJSONParse, mergeWithDefault } from "../helpers/initial";
 
@@ -11,5 +12,5 @@ let getDefaultState = R.compose(
 );
 
 export default function( initialState = getDefaultState("adress-book") ){
-  return createStore( rootReducer, initialState );
+  return applyMiddleware( storageSync )( createStore )( rootReducer, initialState );
 }

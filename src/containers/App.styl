@@ -1,9 +1,17 @@
+@import "../shared/variables.styl"
 .container
   composes center from "postcss!stylus!../shared/layout.styl"
-
+  position relative
 .leftSection
   composes twoWideColumn from "postcss!stylus!../shared/layout.styl"
   padding-top 40px
-
 .rightSection
   composes fourWideColumn from "postcss!stylus!../shared/layout.styl"
+.githubIcon
+  composes fa fa-github-square from "../shared/FontAwesome/css/font-awesome.css"
+  color darkVelvet
+  font-size 1.5em
+.ghLogo
+  position absolute
+  top 10px
+  right 10px

@@ -22,6 +22,9 @@ class App extends Component {
     let Actions = bindActionCreators( actionTypes, dispatch );
     return (
       <div styleName='container'>
+        <a href="https://github.com/jurStv/adressBook-Redux" styleName="ghLogo">
+          <i styleName="githubIcon"></i>
+        </a>
         <section styleName='leftSection'>
           <Filter FilterAction={Actions.Filter} filterWord={filterWord}/>
           <AdressForm

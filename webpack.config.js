@@ -52,7 +52,7 @@ module.exports = {
   },
   postcss: [
     require('lost'),
-    require('autoprefixer-core')
+    require('autoprefixer')
   ],
   resolve: {
     modulesDirectories: ['node_modules'],
