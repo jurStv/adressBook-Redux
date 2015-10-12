@@ -1,5 +1,5 @@
 export default {
-  Filter (filterString, model) {
-    return {...model, filter: filterString};
-  }
-}
+  Filter(filterString, model) {
+    return { ...model, filter: filterString };
+  },
+};

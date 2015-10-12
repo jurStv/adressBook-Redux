@@ -1,18 +1,18 @@
-import React, {Component, PropTypes} from "react";
-import CSSModules from "react-css-modules";
+import React, {Component, PropTypes} from 'react';
+import CSSModules from 'react-css-modules';
 
-import styles from "./Header.styl";
+import styles from './Header.styl';
 
-//@CSSModules(styles)
+@CSSModules(styles)
 class Header extends Component {
-  render(){
+  render() {
     return (
-      <div styleName="header">
-        <i styleName="usersIcon"></i>
-        <h1 styleName="text">Adress book</h1>
+      <div styleName='header'>
+        <i styleName='usersIcon'></i>
+        <h1 styleName='text'>Adress book</h1>
       </div>
-    )
+    );
   }
 }
 
-export default CSSModules(Header, styles)
+export default Header;

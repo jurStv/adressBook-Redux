@@ -1,5 +1,5 @@
 export default {
-  Errorify (errorData, model) {
-    return {...model, error: errorData};
-  }
-}
+  Errorify(errorData, model) {
+    return { ...model, error: errorData };
+  },
+};

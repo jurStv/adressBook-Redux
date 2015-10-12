@@ -1,10 +1,11 @@
 export default function deepFreeze(o) {
-  var prop, propKey;
+  let prop;
+  let propKey;
   Object.freeze(o);
   for (propKey in o) {
     prop = o[propKey];
     if (!o.hasOwnProperty(propKey) || !(typeof prop === 'object') || Object.isFrozen(prop)) {
-      continue;
+      void 0;
     }
     deepFreeze(prop);
   }

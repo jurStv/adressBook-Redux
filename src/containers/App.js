@@ -1,29 +1,29 @@
-import React, {Component, PropTypes} from "react";
+import React, {Component, PropTypes} from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import CSSModules from 'react-css-modules';
-import Header from "../components/Header";
-import AdressForm from "../components/AdressForm";
-import AdressTable from "../components/AdressTable";
-import Filter from "../components/Filter";
-import findAnyMatching from "../helpers/findAnyMatching";
-import actionTypes from "../actions/actionTypes"
+import Header from '../components/Header';
+import AdressForm from '../components/AdressForm';
+import AdressTable from '../components/AdressTable';
+import Filter from '../components/Filter';
+import findAnyMatching from '../helpers/findAnyMatching';
+import actionTypes from '../actions/actionTypes';
 
-import styles from "./App.styl";
+import styles from './App.styl';
 
 @CSSModules(styles)
 class App extends Component {
   render() {
-    let { visibleAdresses,
+    const { visibleAdresses,
       editingAdress,
       filterWord,
       wrongAdress,
       dispatch } = this.props;
-    let Actions = bindActionCreators( actionTypes, dispatch );
+    const Actions = bindActionCreators(actionTypes, dispatch);
     return (
       <div styleName='container'>
-        <a href="https://github.com/jurStv/adressBook-Redux" styleName="ghLogo">
-          <i styleName="githubIcon"></i>
+        <a href='https://github.com/jurStv/adressBook-Redux' styleName='ghLogo'>
+          <i styleName='githubIcon'></i>
         </a>
         <section styleName='leftSection'>
           <Filter FilterAction={Actions.Filter} filterWord={filterWord}/>
@@ -42,28 +42,29 @@ class App extends Component {
             DeleteItems ={Actions.Remove} />
         </section>
       </div>
-    )
+    );
   }
 }
 
 App.propTypes = {
-  visibleAdresses: PropTypes.array.isRequired,
+  dispatch: PropTypes.func.isRequired,
   editingAdress: PropTypes.array.isRequired,
+  filterWord: PropTypes.string.isRequired,
+  visibleAdresses: PropTypes.array.isRequired,
   wrongAdress: PropTypes.array.isRequired,
-  filterWord: PropTypes.string.isRequired
 };
 
 const select = state => {
-  let wrongAdress = state.error;
-  let filterWord = state.filter;
-  let visibleAdresses = state.list.filter( findAnyMatching(filterWord) );
-  let editingAdress = state.editing;
+  const wrongAdress = state.error;
+  const filterWord = state.filter;
+  const visibleAdresses = state.list.filter(findAnyMatching(filterWord));
+  const editingAdress = state.editing;
   return {
     visibleAdresses,
     editingAdress,
     filterWord,
-    wrongAdress
-  }
-}
+    wrongAdress,
+  };
+};
 
 export default connect(select)(App);
